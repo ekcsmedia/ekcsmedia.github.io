@@ -18,32 +18,26 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Construction Transaction Management Application">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="famto_admin_app">
+  <meta name="apple-mobile-web-app-title" content="sattva_rtr_construction_split_wise">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>famto_admin_app</title>
+  <title>sattva_rtr_construction_split_wise</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3256922727';
+    const serviceWorkerVersion = null;
   </script>
-  <!-- This script adds the flutter initialization JS code --> 
+  <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG58jFDbAQQN5ycqbDUOnaY97ufgQ3C2E"></script> -->
-  <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoEWQJI9N4EtAH11h7p3yKzm73rlgcFxY&libraries=drawing,visualization,places">
-</script>
-<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
-
 </head>
 <body>
   <script>
@@ -61,5 +55,30 @@
       });
     });
   </script>
+
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCBBwhcvyA4W5i7xY9sUk94V6ANxhIy2vE",
+    authDomain: "rtr-consructions.firebaseapp.com",
+    projectId: "rtr-consructions",
+    storageBucket: "rtr-consructions.appspot.com",
+    messagingSenderId: "456620836727",
+    appId: "1:456620836727:web:1ffe6afeb4d3f78449c372",
+    measurementId: "G-68JDVWVQBK",
+    databaseURL: "https://rtr-consructions-default-rtdb.firebaseio.com"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 {
-    "name": "famto_admin_app",
-    "short_name": "famto_admin_app",
+    "name": "sattva_rtr_construction_split_wise",
+    "short_name": "sattva_rtr_construction_split_wise",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Construction Transaction Management Application",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
